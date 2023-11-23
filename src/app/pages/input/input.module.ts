@@ -4,27 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { InicioPageRoutingModule } from './inicio-routing.module';
+import { InputPageRoutingModule } from './input-routing.module';
 
-import { InicioPage } from './inicio.page';
+import { InputPage } from './input.page';
 import { ComponentsModule } from 'src/app/components/components.module';
-import { MenuController } from '@ionic/angular';
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InicioPageRoutingModule,
+    InputPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [
-    InicioPage
-  ],
-  providers:[
-    MenuController
-    
-  ]
+  declarations: [InputPage]
 })
-export class InicioPageModule {}
+export class InputPageModule {}
